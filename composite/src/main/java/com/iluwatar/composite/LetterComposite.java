@@ -26,6 +26,7 @@ public abstract class LetterComposite {
 
 	public void print() {
 		printThisBefore();
+		// 有个遍历
 		for (LetterComposite letter : children) {
 			letter.print();
 		}
