@@ -3,7 +3,7 @@ package com.iluwatar.facade;
 /**
  * 
  * DwarvenMineWorker is one of the goldmine subsystems.
- *
+ *  类似模板方法的功能
  */
 public abstract class DwarvenMineWorker {
 

@@ -11,6 +11,8 @@ tags:
 
 **Intent:** 为一系列的子系统提供统一的接口，提供一个高一级的接口，更方面使用。
 
+Ref: 最佳实践 https://blog.csdn.net/lovelion/article/details/8259789
+
 ![alt text](./etc/facade_1.png "Facade")
 
 **Applicability:** Use the Facade pattern when

@@ -16,19 +16,22 @@ import java.util.List;
  */
 public class DwarvenGoldmineFacade {
 
+
+
 	private final List<DwarvenMineWorker> workers;
 
 	public DwarvenGoldmineFacade() {
 		workers = new ArrayList<>();
-		workers.add(new DwarvenGoldDigger());
-		workers.add(new DwarvenCartOperator());
-		workers.add(new DwarvenTunnelDigger());
+		workers.add(new DwarvenGoldDigger()); // 淘金者
+		workers.add(new DwarvenCartOperator()); // 操作员
+		workers.add(new DwarvenTunnelDigger()); // 挖隧道者
 	}
 
 	public void startNewDay() {
         makeActions(workers, DwarvenMineWorker.Action.WAKE_UP, DwarvenMineWorker.Action.GO_TO_MINE);
 	}
 
+	// 挖出黄金
 	public void digOutGold() {
         makeActions(workers, DwarvenMineWorker.Action.WORK);
 	}
